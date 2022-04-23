@@ -15,8 +15,9 @@ public class CategoriaService {
 	private CategoriaRepository repo;
 	
 	public Categoria buscar(Integer id) {
-		Optional<Categoria> obj = repo.findById(id);		
+		Optional<Categoria> obj = repo.findById(id);	
 		return obj.orElse(null);
 	}
+		
 	
 }
